@@ -1,0 +1,128 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+// ## Colors
+
+// ### Primary
+
+$Soft-blue:hsl(215, 51%, 70%);
+$Soft-Cyan:hsl(178, 100%, 50%);
+
+// ### Neutral
+
+$Very-dark-main-blue:hsl(217, 54%, 11%); //(main BG)
+$Very-dark-card-blue:hsl(216, 50%, 16%); //(card BG)
+$Very-dark-line-blue:hsl(215, 32%, 27%);  //(line)
+$Neutral-White:hsl(0, 0%, 100%);
+
+@media(max-width: 1440px){
+    body{
+        background-color: $Very-dark-main-blue;
+        font-family: 'Outfit',sans-serif;
+        
+    }
+
+    .BoxEquilibrium{
+        background-color: $Very-dark-card-blue;
+        width: 300px;
+        margin: auto;
+        padding: 1.5rem;
+        border-radius: 10px;
+        .ImgBox{
+            background-image: url(/images/image-equilibrium.jpg);
+            width: 300px;
+            height: 300px;
+            background-repeat: no-repeat;
+            background-size: cover;
+            margin: auto;
+            .EquilibriumImg{
+                width: 300px;
+                padding: 1rem;
+                border-radius: 20px;
+                position: relative;
+                &:hover{
+                    opacity: 0.3;
+                    
+                }
+            }
+            .BoxView{
+                position: absolute;
+                top: 24px;
+                left: 33rem;
+                width: 310px;
+                height: 300px;
+                opacity: 0;
+                &:hover{
+                    opacity: 0.7;
+                    background-color: $Soft-Cyan;
+                    cursor: pointer;
+                }
+                .view{
+                    position: relative;
+                    top: 130px;
+                    left: 130px;
+                }
+            }
+    
+        }
+        .CreatorBox{
+            display: flex;
+            padding: 1rem;
+            .avatar{
+                width: 30px;
+                height: 30px;
+                border: 1px solid $Neutral-White;
+                border-radius: 100px;
+                position: relative;
+                top: 10px;
+            }
+            .creator{
+                margin-left: 15px;
+                color: $Very-dark-line-blue;
+                font-size: 18px;
+                a{
+                    color: $Neutral-White;
+                    text-decoration: none;
+                    font-weight: 300;
+                    &:hover{
+                        color: $Soft-Cyan;
+                    }
+                }
+            }
+        }
+    }
+    .BoxText{
+        h1{
+            font-size: 26px;
+            a{
+                color: $Neutral-White;
+                text-decoration: none;
+                &:hover{
+                    color: $Soft-Cyan;
+                }
+            }
+        }
+        .Paragraph{
+            color: $Very-dark-line-blue;
+            font-size: 18px;
+        }
+        .BoxIcons{
+            display: flex;
+            justify-content: space-between;
+            border-bottom: 1px solid $Very-dark-line-blue;
+            .ethereum{
+                color: $Soft-Cyan;
+            }
+            .clock{
+                color: hsl(216, 15%, 42%);
+            }
+        }
+      
+
+    }
+}
+@media(min-width: 375px){
+    body{
+        overflow-x: hidden;
+    }
+}

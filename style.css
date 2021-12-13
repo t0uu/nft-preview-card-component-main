@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
+@media (max-width: 1440px) {
+  body {
+    background-color: #0d192b;
+    font-family: 'Outfit',sans-serif;
+  }
+  .BoxEquilibrium {
+    background-color: #14253d;
+    width: 300px;
+    margin: auto;
+    padding: 1.5rem;
+    border-radius: 10px;
+  }
+  .BoxEquilibrium .ImgBox {
+    background-image: url(/images/image-equilibrium.jpg);
+    width: 300px;
+    height: 300px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: auto;
+  }
+  .BoxEquilibrium .ImgBox .EquilibriumImg {
+    width: 300px;
+    padding: 1rem;
+    border-radius: 20px;
+    position: relative;
+  }
+  .BoxEquilibrium .ImgBox .EquilibriumImg:hover {
+    opacity: 0.3;
+  }
+  .BoxEquilibrium .ImgBox .BoxView {
+    position: absolute;
+    top: 24px;
+    left: 33rem;
+    width: 310px;
+    height: 300px;
+    opacity: 0;
+  }
+  .BoxEquilibrium .ImgBox .BoxView:hover {
+    opacity: 0.7;
+    background-color: #00fff7;
+    cursor: pointer;
+  }
+  .BoxEquilibrium .ImgBox .BoxView .view {
+    position: relative;
+    top: 130px;
+    left: 130px;
+  }
+  .BoxEquilibrium .CreatorBox {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 1rem;
+  }
+  .BoxEquilibrium .CreatorBox .avatar {
+    width: 30px;
+    height: 30px;
+    border: 1px solid white;
+    border-radius: 100px;
+    position: relative;
+    top: 10px;
+  }
+  .BoxEquilibrium .CreatorBox .creator {
+    margin-left: 15px;
+    color: #2f415b;
+    font-size: 18px;
+  }
+  .BoxEquilibrium .CreatorBox .creator a {
+    color: white;
+    text-decoration: none;
+    font-weight: 300;
+  }
+  .BoxEquilibrium .CreatorBox .creator a:hover {
+    color: #00fff7;
+  }
+  .BoxText h1 {
+    font-size: 26px;
+  }
+  .BoxText h1 a {
+    color: white;
+    text-decoration: none;
+  }
+  .BoxText h1 a:hover {
+    color: #00fff7;
+  }
+  .BoxText .Paragraph {
+    color: #2f415b;
+    font-size: 18px;
+  }
+  .BoxText .BoxIcons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    border-bottom: 1px solid #2f415b;
+  }
+  .BoxText .BoxIcons .ethereum {
+    color: #00fff7;
+  }
+  .BoxText .BoxIcons .clock {
+    color: #5b687b;
+  }
+}
+
+@media (min-width: 375px) {
+  body {
+    overflow-x: hidden;
+  }
+}
+/*# sourceMappingURL=style.css.map */
